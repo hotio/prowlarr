@@ -13,7 +13,7 @@ elif [[ ${1} == "tests" ]]; then
     echo "List installed packages..."
     docker run --rm --entrypoint="" "${2}" apt list --installed
     echo "Check if app works..."
-    app_url="http://localhost:7878/system/status"
+    app_url="http://localhost:9696/system/status"
     docker run --rm --network host -d --name service -e DEBUG="yes" "${2}"
     currenttime=$(date +%s); maxtime=$((currenttime+60)); while (! curl -fsSL "${app_url}" > /dev/null) && [[ "$currenttime" -lt "$maxtime" ]]; do sleep 1; currenttime=$(date +%s); done
     curl -fsSL "${app_url}" > /dev/null
@@ -23,13 +23,13 @@ elif [[ ${1} == "tests" ]]; then
     docker logs service
     exit ${status}
 elif [[ ${1} == "screenshot" ]]; then
-    app_url="http://localhost:7878/system/status"
+    app_url="http://localhost:9696/system/status"
     docker run --rm --network host -d --name service -e DEBUG="yes" "${2}"
     currenttime=$(date +%s); maxtime=$((currenttime+60)); while (! curl -fsSL "${app_url}" > /dev/null) && [[ "$currenttime" -lt "$maxtime" ]]; do sleep 1; currenttime=$(date +%s); done
     docker run --rm --network host --entrypoint="" -u "$(id -u "$USER")" -v "${GITHUB_WORKSPACE}":/usr/src/app/src zenika/alpine-chrome:with-puppeteer node src/puppeteer.js
     exit 0
 else
-    version=$(curl -fsSL "https://radarr.servarr.com/v1/update/nightly/changes?os=linux" | jq -r .[0].version)
+    version=$(curl -fsSL "https://prowlarr.servarr.com/v1/update/nightly/changes?os=linux" | jq -r .[0].version)
     [[ -z ${version} ]] && exit 1
     [[ ${version} == "null" ]] && exit 0
     echo '{"version":"'"${version}"'"}' | jq . > VERSION.json

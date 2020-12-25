@@ -2,7 +2,7 @@ FROM hotio/base@sha256:63541494a6b6e37e2913c1ebc0ee45a4d046965fb453bba5e8d2c688b
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
-EXPOSE 7878
+EXPOSE 9696
 
 # install packages
 RUN apt update && \
@@ -16,8 +16,8 @@ RUN apt update && \
 ARG VERSION
 ARG PACKAGE_VERSION=${VERSION}
 RUN mkdir "${APP_DIR}/bin" && \
-    curl -fsSL "https://radarr.servarr.com/v1/update/nightly/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=arm" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
-    rm -rf "${APP_DIR}/bin/Radarr.Update" && \
+    curl -fsSL "https://prowlarr.servarr.com/v1/update/nightly/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=arm" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
+    rm -rf "${APP_DIR}/bin/Prowlarr.Update" && \
     echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=nightly" > "${APP_DIR}/package_info" && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
