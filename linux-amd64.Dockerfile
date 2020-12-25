@@ -1,0 +1,24 @@
+FROM hotio/base@sha256:d1028a84da6b618f947ff7506b28763ce8e9238d7f47da8e59de8553f763004a
+
+ARG DEBIAN_FRONTEND="noninteractive"
+
+EXPOSE 7878
+
+# install packages
+RUN apt update && \
+    apt install -y --no-install-recommends --no-install-suggests \
+        libicu66 && \
+# clean up
+    apt autoremove -y && \
+    apt clean && \
+    rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+
+ARG VERSION
+ARG PACKAGE_VERSION=${VERSION}
+RUN mkdir "${APP_DIR}/bin" && \
+    curl -fsSL "https://radarr.servarr.com/v1/update/nightly/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=x64" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
+    rm -rf "${APP_DIR}/bin/Radarr.Update" && \
+    echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=nightly" > "${APP_DIR}/package_info" && \
+    chmod -R u=rwX,go=rX "${APP_DIR}"
+
+COPY root/ /
