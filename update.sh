@@ -1,14 +1,7 @@
 #!/bin/bash
 
 if [[ ${1} == "checkdigests" ]]; then
-    export DOCKER_CLI_EXPERIMENTAL=enabled
-    image="hotio/base"
-    tag="focal"
-    manifest=$(docker manifest inspect ${image}:${tag})
-    [[ -z ${manifest} ]] && exit 1
-    digest=$(echo "${manifest}" | jq -r '.manifests[] | select (.platform.architecture == "amd64" and .platform.os == "linux").digest') && sed -i "s#FROM ${image}.*\$#FROM ${image}@${digest}#g" ./linux-amd64.Dockerfile  && echo "${digest}"
-    digest=$(echo "${manifest}" | jq -r '.manifests[] | select (.platform.architecture == "arm" and .platform.os == "linux" and .platform.variant == "v7").digest') && sed -i "s#FROM ${image}.*\$#FROM ${image}@${digest}#g" ./linux-arm-v7.Dockerfile && echo "${digest}"
-    digest=$(echo "${manifest}" | jq -r '.manifests[] | select (.platform.architecture == "arm64" and .platform.os == "linux").digest') && sed -i "s#FROM ${image}.*\$#FROM ${image}@${digest}#g" ./linux-arm64.Dockerfile  && echo "${digest}"
+    exit 0
 elif [[ ${1} == "tests" ]]; then
     echo "List installed packages..."
     docker run --rm --entrypoint="" "${2}" apt list --installed
@@ -29,8 +22,10 @@ elif [[ ${1} == "screenshot" ]]; then
     docker run --rm --network host --entrypoint="" -u "$(id -u "$USER")" -v "${GITHUB_WORKSPACE}":/usr/src/app/src zenika/alpine-chrome:with-puppeteer node src/puppeteer.js
     exit 0
 else
-    version=$(curl -fsSL "https://prowlarr.servarr.com/v1/update/nightly/changes?os=linux" | jq -r .[0].version)
+    branch=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/prowlarr/prowlarr/pulls?state=open&base=develop" | jq -r 'sort_by(.updated_at) | .[] | select((.head.repo.full_name == "Prowlarr/Prowlarr") and (.head.ref | contains("dependabot") | not)) | .head.ref' | tail -n 1)
+    [[ -z ${branch} ]] && exit 0
+    version=$(curl -fsSL "https://prowlarr.servarr.com/v1/update/${branch}/changes?os=linux" | jq -r .[0].version)
     [[ -z ${version} ]] && exit 1
     [[ ${version} == "null" ]] && exit 0
-    echo '{"version":"'"${version}"'"}' | jq . > VERSION.json
+    echo '{"version":"'"${version}"'","branch":"'"${branch}"'"}' | jq . > VERSION.json
 fi

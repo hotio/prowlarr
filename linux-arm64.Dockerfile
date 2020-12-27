@@ -1,4 +1,4 @@
-FROM hotio/base@sha256:b8ab6a6edfbf3bc4a85f2040672c021462d374e135bccfc6e9e56883e5a04cd9
+FROM ghcr.io/hotio/base:focal
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
@@ -14,11 +14,12 @@ RUN apt update && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 ARG VERSION
-ARG PACKAGE_VERSION=${VERSION}
+ARG BRANCH
+ARG PACKAGE_VERSION={VERSION}
 RUN mkdir "${APP_DIR}/bin" && \
-    curl -fsSL "https://prowlarr.servarr.com/v1/update/nightly/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=arm64" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
+    curl -fsSL "https://prowlarr.servarr.com/v1/update/${BRANCH}/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=arm64" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
     rm -rf "${APP_DIR}/bin/Prowlarr.Update" && \
-    echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=nightly" > "${APP_DIR}/package_info" && \
+    echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=${BRANCH}" > "${APP_DIR}/package_info" && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
