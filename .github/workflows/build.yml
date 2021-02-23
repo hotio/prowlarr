@@ -7,12 +7,28 @@ on:
 
 jobs:
 
-  build:
+  check:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Shellcheck
+        run: |
+          shellcheck --version
+          if [[ -d ./root ]]; then
+            find "./root" -type f -print -exec shellcheck {} \;
+          else
+            true
+          fi
+
+  build:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
         architecture: [linux-arm-v7, linux-arm64, linux-amd64]
+    needs: [check]
     outputs:
       version: ${{ steps.prep.outputs.version }}
       branch: ${{ steps.prep.outputs.branch }}
@@ -25,16 +41,6 @@ jobs:
         run: |
           (test -f ${{ matrix.architecture }}.Dockerfile && echo ::set-output name=check::passed) || echo ::set-output name=check::failed
 
-      - name: Shellcheck
-        if: "contains(steps.arch_check.outputs.check, 'passed')"
-        run: |
-          shellcheck --version
-          if [[ -d ./root ]]; then
-            find "./root" -type f -print -exec shellcheck {} \;
-          else
-            true
-          fi
-
       - name: Set up QEMU
         if: "contains(steps.arch_check.outputs.check, 'passed')"
         uses: docker/setup-qemu-action@v1
@@ -46,6 +52,13 @@ jobs:
           install: true
           version: latest
           driver-opts: image=moby/buildkit:master
+
+      - name: Login to DockerHub
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Login to GitHub Container Registry
         if: "contains(steps.arch_check.outputs.check, 'passed')"
@@ -98,6 +111,7 @@ jobs:
           cache-from: ghcr.io/${{ steps.prep.outputs.cache }}
           cache-to: ghcr.io/${{ steps.prep.outputs.cache }}
           tags: |
+            ${{ steps.prep.outputs.tag }}
             ghcr.io/${{ steps.prep.outputs.tag }}
           labels: |
             org.opencontainers.image.created=${{ steps.prep.outputs.created }}
@@ -112,15 +126,34 @@ jobs:
             PACKAGE_VERSION=${{ steps.prep.outputs.package-version }}
             ${{ steps.prep.outputs.build-args }}
 
+      - name: Dive Analysis
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: yuichielectric/dive-action@0.0.4
+        with:
+          image: "ghcr.io/${{ steps.prep.outputs.tag }}"
+
+      - name: Run tests
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        run: |
+          bash update.sh tests ghcr.io/${{ steps.prep.outputs.tag }}
+
   publish:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        registry: [ghcr.io]
+        registry: [docker.io, ghcr.io]
     needs: [build]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        if: matrix.registry == 'docker.io'
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Login to GitHub Container Registry
         if: matrix.registry == 'ghcr.io'
@@ -155,4 +188,109 @@ jobs:
           if [[ ${GITHUB_REF//refs\/heads\//} == release ]]; then
             docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
             docker manifest push ${IMAGE}:latest
+          fi
+
+  notify:
+    runs-on: ubuntu-20.04
+    if: ${{ always() }}
+    needs: [build, publish]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Take screenshot
+        if: "contains(needs.publish.result, 'success')"
+        run: |
+          if [[ -f puppeteer.js ]]; then
+            bash update.sh screenshot ghcr.io/${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}
+          fi
+
+      - name: Send discord notification
+        if: "!contains(github.event.head_commit.message, 'skip ci')"
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ needs.build.outputs.version }}
+          STATUS: ${{ needs.publish.result }}
+        shell: bash
+        run: |
+          export DOCKER_CLI_EXPERIMENTAL=enabled
+          [[ "${STATUS}" == "success" ]] && DIGESTS=$(docker manifest inspect ghcr.io/${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7} | jq -r '.manifests[]  | "\(.digest | .[7:19]) \(.platform.os)/\(.platform.architecture)\(.platform.variant // "")"')
+          COMMIT_MESSAGE="$(curl -u "${GITHUB_OWNER}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}" | jq -r .commit.message | head -1)"
+          [[ "${STATUS}" == "success" ]] && COLOR="3066993"
+          CHANGELOG=$(jq -r '.changelog' < VERSION.json)
+          if [[ ${CHANGELOG} != null ]]; then
+            VERSION="[${VERSION:----}](${CHANGELOG})"
+          fi
+          if [[ ! -f "screenshot.png" ]]; then
+              curl -fsSL "https://robohash.org/${RANDOM}.png?set=set3&size=700x700" > robo.png
+              sudo apt install -y --no-install-recommends --no-install-suggests imagemagick
+              convert robo.png -resize 1920x1080 -background none -gravity center -extent 1920x1080 screenshot.png
+          fi
+          json='{
+            "embeds": [
+              {
+                "title": "'${GITHUB_REPOSITORY}':'${GITHUB_REF//refs\/heads\//}'",
+                "url": "https://github.com/'${GITHUB_REPOSITORY}'/actions/runs/'${GITHUB_RUN_ID}'",
+                "color": '${COLOR:-15158332}',
+                "fields": [
+                  {
+                    "name": "Commit Message",
+                    "value": "```'${COMMIT_MESSAGE//\"/\\\"}'```"
+                  },
+                  {
+                    "name": "Commit",
+                    "value": "['${GITHUB_SHA:0:7}'](https://github.com/'${GITHUB_REPOSITORY}'/commit/'${GITHUB_SHA}')",
+                    "inline": true
+                  },
+                  {
+                    "name": "Version",
+                    "value": "'${VERSION:----}'",
+                    "inline": true
+                  },
+                  {
+                    "name": "Digests",
+                    "value": "```'"$(echo "${DIGESTS:----}" | tr '\n' '#' | sed 's/#/\\n/g')"'```"
+                  }
+                ],
+                "footer": {
+                  "text": "Powered by GitHub Actions"
+                },
+                "timestamp": "'$(date -u +'%FT%T.%3NZ')'",
+                "image": {
+                  "url": "attachment://screenshot.png"
+                }
+              }
+            ]
+          }'
+          curl -fsSL --retry 5 -H "Content-Type: multipart/form-data" -F "file=@screenshot.png" -F "payload_json=${json}" "${DISCORD_WEBHOOK}"
+
+  tags:
+    runs-on: ubuntu-20.04
+    needs: [build, publish]
+    steps:
+      - name: Update tags.json
+        env:
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          VERSION: ${{ needs.build.outputs.version }}
+        shell: bash
+        run: |
+          git config --global user.email "${GITHUB_OWNER}@users.noreply.github.com"
+          git config --global user.name "${GITHUB_OWNER}"
+          git clone -b "master" "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" ${GITHUB_WORKSPACE}/master
+          cd ${GITHUB_WORKSPACE}/master || exit 1
+          ls -lah
+          if [[ -f ./tags.json ]]; then
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .version) |= "'"${VERSION}"'"' <<< "${json}" > ./tags.json
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .lastUpdated) |= "'"$(date -u +'%FT%T.%3NZ')"'"' <<< "${json}" > ./tags.json
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .commit) |= "'"${GITHUB_SHA:0:7}"'"' <<< "${json}" > ./tags.json
+            git add .
+            if git commit -m ":${GITHUB_REF//refs\/heads\//} => [${VERSION}, ${GITHUB_SHA:0:7}]"; then
+              git push
+            fi
           fi
