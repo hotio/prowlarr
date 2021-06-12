@@ -1,4 +1,4 @@
 {
-  "version": "0.1.0.438",
-  "branch": "healthcheck-type-fix"
+  "version": "0.1.0.430",
+  "branch": "fix-logging-authkeyquote"
 }
