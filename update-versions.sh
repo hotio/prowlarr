@@ -1,7 +1,8 @@
 #!/bin/bash
 
-version=$(curl -fsSL "https://prowlarr.servarr.com/v1/update/develop/changes?os=linuxmusl&runtime=netcore&arch=x64" | jq -r .[0].version)
+branch="develop"
+version=$(curl -fsSL "https://prowlarr.servarr.com/v1/update/${branch}/changes?os=linuxmusl&runtime=netcore&arch=x64" | jq -r .[0].version)
 [[ -z ${version} ]] && exit 0
 [[ ${version} == "null" ]] && exit 0
 version_json=$(cat ./VERSION.json)
-jq '.version = "'"${version}"'"' <<< "${version_json}" > VERSION.json
+jq '.version = "'"${version}"'" | .branch = "'"${branch}"'"' <<< "${version_json}" > VERSION.json
