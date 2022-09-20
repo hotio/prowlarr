@@ -1,4 +1,5 @@
 {
+  "hide": true,
   "version": "0.4.6.1974",
   "branch": "deleted-defs-fix",
   "upstream_image": "cr.hotio.dev/hotio/base",
