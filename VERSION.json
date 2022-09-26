@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "0.4.7.1986",
+  "version": "0.4.7.1987",
   "branch": "package-updates",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
