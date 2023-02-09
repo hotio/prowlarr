@@ -1,6 +1,6 @@
 {
   "description": "nightly",
-  "version": "1.2.0.2561",
+  "version": "1.2.0.2564",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:a341369915bccc59b9b5145f10d80a78e82c57ce8a98607d49cff802697ae131",
