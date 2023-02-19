@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.2.2.2684",
+  "version": "1.2.2.2687",
   "branch": "on-grab",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
