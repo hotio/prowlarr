@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.5.0.3270",
+  "version": "1.5.0.3275",
   "branch": "rarbg-ratelimit",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
