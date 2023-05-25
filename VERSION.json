@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.5.0.3323",
+  "version": "1.5.1.3408",
   "branch": "cardigann-pagination",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
