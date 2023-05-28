@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.5.2.3432",
+  "version": "1.5.2.3436",
   "branch": "fix-search-path-categories",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
