@@ -1,7 +1,7 @@
 {
   "hide": true,
-  "version": "1.6.1.3561",
-  "branch": "add-indexer-filter-categories",
+  "version": "1.6.1.3556",
+  "branch": "anime-standard-format-search-sonarr",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:59c115de4147c4f8cbaea75b1d882c9fc34e2382cf0ea1b3342b60eb18369194",
