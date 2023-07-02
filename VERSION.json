@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.7.0.3630",
+  "version": "1.7.1.3633",
   "branch": "http-client-default-request-version",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
