@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.7.3.3733",
+  "version": "1.7.3.3752",
   "branch": "beyondhd-search-types",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
