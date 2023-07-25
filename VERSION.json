@@ -1,7 +1,7 @@
 {
   "hide": true,
-  "version": "1.7.3.3761",
-  "branch": "apps-value-hash",
+  "version": "1.8.0.3772",
+  "branch": "typescript-components",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:150cc1b20ec80f25cb5318a948bcde7c8522211aec3171828a827e45145e6de9",
