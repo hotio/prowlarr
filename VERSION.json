@@ -1,7 +1,7 @@
 {
   "hide": true,
-  "version": "1.8.6.3898",
-  "branch": "scene-flag",
+  "version": "1.8.6.3915",
+  "branch": "stats-filter",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:e3ba95dab43ff3129f22427a96166e5cd25b099a1d3e377d3fb2976e41c2cec9",
