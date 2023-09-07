@@ -1,6 +1,6 @@
 {
   "description": "nightly",
-  "version": "1.8.6.3931",
+  "version": "1.8.6.3938",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:506056136957b8ba9262842bd78d73b7dac96a2f2f075693eb5bc2686dcf0891",
