@@ -18,5 +18,15 @@
       "pr-torznab-magneturl-1.8.6.3930",
       "pr-torznab-magneturl-fa23a3a"
     ]
+  },
+  "release": {
+    "description": "master",
+    "last_updated": "2023-09-08T06:21:02.037Z",
+    "latest": true,
+    "tags": [
+      "release",
+      "release-1.7.4.3769",
+      "release-89a3335"
+    ]
   }
 }
