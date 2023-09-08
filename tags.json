@@ -8,5 +8,15 @@
       "nightly-1.8.6.3938",
       "nightly-1963111"
     ]
+  },
+  "pr": {
+    "description": "",
+    "last_updated": "2023-09-08T06:20:56.261Z",
+    "latest": false,
+    "tags": [
+      "pr-torznab-magneturl",
+      "pr-torznab-magneturl-1.8.6.3930",
+      "pr-torznab-magneturl-fa23a3a"
+    ]
   }
 }
