@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.8.6.3930",
+  "version": "1.8.6.3945",
   "branch": "torznab-magneturl",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
