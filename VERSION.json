@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.9.0.3952",
+  "version": "1.9.0.3954",
   "branch": "migration-timeout",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
