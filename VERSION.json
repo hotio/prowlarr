@@ -1,7 +1,7 @@
 {
   "hide": true,
-  "version": "1.8.6.3945",
-  "branch": "torznab-magneturl",
+  "version": "1.9.1.3978",
+  "branch": "ops-freeleech-tokens",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:15d3c6c0bb56f67e651612f21d335e0b0faed3b1bfd88f2c96758ef1d390138a",
