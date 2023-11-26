@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.10.5.4112",
+  "version": "1.10.5.4113",
   "branch": "ops-freeleech-tokens",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
