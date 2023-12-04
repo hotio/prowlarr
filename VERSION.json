@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.11.1.4134",
+  "version": "1.11.1.4135",
   "branch": "norbits",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
