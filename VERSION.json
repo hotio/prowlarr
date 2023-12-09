@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.11.1.4144",
+  "version": "1.11.1.4145",
   "branch": "release-external-links",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
