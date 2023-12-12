@@ -1,12 +1,12 @@
 {
   "nightly": {
     "description": "nightly",
-    "last_updated": "2023-12-10T14:34:14.318Z",
+    "last_updated": "2023-12-12T15:20:45.280Z",
     "latest": false,
     "tags": [
       "nightly",
-      "nightly-1.11.2.4148",
-      "nightly-e15e1b3"
+      "nightly-1.11.2.4152",
+      "nightly-ef4c435"
     ]
   },
   "release": {
