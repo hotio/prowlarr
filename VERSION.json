@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.13.0.4213",
+  "version": "1.13.0.4216",
   "branch": "api-mask-fields",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
