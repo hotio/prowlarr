@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.13.1.4235",
+  "version": "1.13.1.4238",
   "branch": "api-mask-fields",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
