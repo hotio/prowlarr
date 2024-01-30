@@ -1,7 +1,7 @@
 {
   "hide": true,
-  "version": "1.13.1.4240",
-  "branch": "api-mask-fields",
+  "version": "1.13.2.4247",
+  "branch": "download-magnet-url-redirect",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_digest_amd64": "sha256:a55e205512f89e7851be453c57d4b580a454c0378b8cc7a91244b9b60892a988",
