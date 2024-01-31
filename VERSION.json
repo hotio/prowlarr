@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "1.13.2.4247",
+  "version": "1.13.2.4248",
   "branch": "download-magnet-url-redirect",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
