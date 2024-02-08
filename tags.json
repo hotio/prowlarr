@@ -9,6 +9,18 @@
       "nightly-3613c87"
     ]
   },
+  "pr-download-magnet-url-redirect": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-02-08T08:11:33.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7826471552",
+    "latest": false,
+    "tags": [
+      "pr-download-magnet-url-redirect",
+      "pr-download-magnet-url-redirect-1.13.2.4248",
+      "pr-download-magnet-url-redirect-ac75675"
+    ]
+  },
   "release": {
     "description": "master",
     "last_updated": "2024-02-04T21:21:18.163Z",
