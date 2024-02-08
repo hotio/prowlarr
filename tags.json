@@ -37,12 +37,14 @@
   },
   "testing": {
     "description": "develop",
-    "last_updated": "2024-02-04T21:21:22.839Z",
+    "hide": false,
+    "last_updated": "2024-02-08T08:11:57.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7826472032",
     "latest": false,
     "tags": [
       "testing",
       "testing-1.13.2.4251",
-      "testing-b2c2d37"
+      "testing-be791a3"
     ]
   }
 }
