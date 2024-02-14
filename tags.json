@@ -23,6 +23,18 @@
       "pr-download-magnet-url-redirect-05b84a9"
     ]
   },
+  "pr-multiple-kind-of-proxies": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-02-14T22:03:15.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7907914790",
+    "latest": false,
+    "tags": [
+      "pr-multiple-kind-of-proxies",
+      "pr-multiple-kind-of-proxies-1.14.0.4281",
+      "pr-multiple-kind-of-proxies-ef9fe51"
+    ]
+  },
   "release": {
     "description": "master",
     "hide": false,
