@@ -38,13 +38,13 @@
   "release": {
     "description": "master",
     "hide": false,
-    "last_updated": "2024-02-18T00:48:53.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7945319687",
+    "last_updated": "2024-02-19T07:31:10.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7955912766",
     "latest": true,
     "tags": [
       "release",
       "release-1.13.3.4273",
-      "release-adb82ba"
+      "release-73d734c"
     ]
   },
   "testing": {
