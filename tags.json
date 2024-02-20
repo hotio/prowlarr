@@ -26,13 +26,13 @@
   "pr-multiple-kind-of-proxies": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-02-19T11:32:08.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7958716599",
+    "last_updated": "2024-02-20T02:48:26.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7967714884",
     "latest": false,
     "tags": [
       "pr-multiple-kind-of-proxies",
       "pr-multiple-kind-of-proxies-1.14.0.4282",
-      "pr-multiple-kind-of-proxies-e40cfa7"
+      "pr-multiple-kind-of-proxies-d87a323"
     ]
   },
   "release": {
