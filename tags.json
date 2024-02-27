@@ -50,13 +50,13 @@
   "testing": {
     "description": "develop",
     "hide": false,
-    "last_updated": "2024-02-27T13:50:54.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8065668510",
+    "last_updated": "2024-02-27T22:33:44.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8072111063",
     "latest": false,
     "tags": [
       "testing",
       "testing-1.14.0.4286",
-      "testing-5155304"
+      "testing-eae87bd"
     ]
   }
 }
