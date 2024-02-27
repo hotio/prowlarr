@@ -38,13 +38,13 @@
   "release": {
     "description": "master",
     "hide": false,
-    "last_updated": "2024-02-27T22:33:42.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8072110587",
+    "last_updated": "2024-02-27T23:29:13.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8072670718",
     "latest": true,
     "tags": [
       "release",
       "release-1.13.3.4273",
-      "release-a514e3a"
+      "release-3fb509c"
     ]
   },
   "testing": {
