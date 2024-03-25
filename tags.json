@@ -2,13 +2,13 @@
   "nightly": {
     "description": "nightly",
     "hide": false,
-    "last_updated": "2024-03-24T07:53:05.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8407773383",
+    "last_updated": "2024-03-25T18:59:35.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8425468789",
     "latest": false,
     "tags": [
       "nightly",
-      "nightly-1.15.0.4350",
-      "nightly-352eec7"
+      "nightly-1.15.0.4357",
+      "nightly-a71328e"
     ]
   },
   "pr-download-magnet-url-redirect": {
