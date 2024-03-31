@@ -38,13 +38,13 @@
   "pr-newznab-capabilities": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-03-31T18:10:19.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8500016608",
+    "last_updated": "2024-03-31T19:03:11.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8500288849",
     "latest": false,
     "tags": [
       "pr-newznab-capabilities",
-      "pr-newznab-capabilities-1.16.0.4367",
-      "pr-newznab-capabilities-2ed0350"
+      "pr-newznab-capabilities-1.16.0.4368",
+      "pr-newznab-capabilities-9ff2d06"
     ]
   },
   "release": {
