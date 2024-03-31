@@ -35,6 +35,18 @@
       "pr-multiple-kind-of-proxies-df3f099"
     ]
   },
+  "pr-newznab-capabilities": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-03-31T18:10:19.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8500016608",
+    "latest": false,
+    "tags": [
+      "pr-newznab-capabilities",
+      "pr-newznab-capabilities-1.16.0.4367",
+      "pr-newznab-capabilities-2ed0350"
+    ]
+  },
   "release": {
     "description": "master",
     "hide": false,
