@@ -47,6 +47,18 @@
       "pr-newznab-capabilities-9ff2d06"
     ]
   },
+  "pr-ops-freeleech-tokens": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-04-06T19:20:19.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8583296746",
+    "latest": false,
+    "tags": [
+      "pr-ops-freeleech-tokens",
+      "pr-ops-freeleech-tokens-1.16.0.4400",
+      "pr-ops-freeleech-tokens-1202b46"
+    ]
+  },
   "release": {
     "description": "master",
     "hide": false,
