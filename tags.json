@@ -59,6 +59,18 @@
       "pr-ops-freeleech-tokens-1202b46"
     ]
   },
+  "pr-retry-query": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-04-09T19:02:37.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8620894467",
+    "latest": false,
+    "tags": [
+      "pr-retry-query",
+      "pr-retry-query-1.16.1.4407",
+      "pr-retry-query-8d7c26b"
+    ]
+  },
   "release": {
     "description": "master",
     "hide": false,
