@@ -11,6 +11,18 @@
       "nightly-e6d7e31"
     ]
   },
+  "pr-avoid-retest-providers": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-04-14T05:52:11.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8678561577",
+    "latest": false,
+    "tags": [
+      "pr-avoid-retest-providers",
+      "pr-avoid-retest-providers-1.16.1.4424",
+      "pr-avoid-retest-providers-43dacaf"
+    ]
+  },
   "pr-bump-dotnet-v6": {
     "description": "",
     "hide": true,
