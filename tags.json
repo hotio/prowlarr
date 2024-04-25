@@ -50,13 +50,13 @@
   "pr-forceful-testing": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-04-23T09:22:18.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8797823058",
+    "last_updated": "2024-04-25T07:09:22.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8828280075",
     "latest": false,
     "tags": [
       "pr-forceful-testing",
       "pr-forceful-testing-1.16.2.4426",
-      "pr-forceful-testing-3d9fed2"
+      "pr-forceful-testing-9eacc7d"
     ]
   },
   "pr-multiple-kind-of-proxies": {
