@@ -38,13 +38,13 @@
   "pr-download-magnet-url-redirect": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-02-09T05:19:22.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/7839893191",
+    "last_updated": "2024-04-26T15:21:09.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8850512286",
     "latest": false,
     "tags": [
       "pr-download-magnet-url-redirect",
-      "pr-download-magnet-url-redirect-1.13.2.4248",
-      "pr-download-magnet-url-redirect-05b84a9"
+      "pr-download-magnet-url-redirect-1.17.0.4451",
+      "pr-download-magnet-url-redirect-504038a"
     ]
   },
   "pr-forceful-testing": {
