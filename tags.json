@@ -47,6 +47,18 @@
       "pr-download-magnet-url-redirect-504038a"
     ]
   },
+  "pr-env-settings": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-05-02T16:38:29.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/8927323480",
+    "latest": false,
+    "tags": [
+      "pr-env-settings",
+      "pr-env-settings-1.17.1.4482",
+      "pr-env-settings-ac83df3"
+    ]
+  },
   "pr-forceful-testing": {
     "description": "",
     "hide": true,
