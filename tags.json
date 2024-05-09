@@ -119,6 +119,18 @@
       "pr-override-release-grab-modal-759b461"
     ]
   },
+  "pr-password-input": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-05-09T21:49:58.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9023968753",
+    "latest": false,
+    "tags": [
+      "pr-password-input",
+      "pr-password-input-1.17.2.4508",
+      "pr-password-input-a94cd9d"
+    ]
+  },
   "pr-retry-query": {
     "description": "",
     "hide": true,
