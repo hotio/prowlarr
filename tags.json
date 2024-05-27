@@ -143,6 +143,18 @@
       "pr-retry-query-8d7c26b"
     ]
   },
+  "pr-shenanigans-by-baker": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-05-27T01:36:19.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9247860312",
+    "latest": false,
+    "tags": [
+      "pr-shenanigans-by-baker",
+      "pr-shenanigans-by-baker-1.18.0.4529",
+      "pr-shenanigans-by-baker-f47b386"
+    ]
+  },
   "release": {
     "description": "master",
     "hide": false,
