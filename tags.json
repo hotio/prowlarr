@@ -86,13 +86,13 @@
   "pr-nbl-filter-releases": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-06-25T01:29:56.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9654927202",
+    "last_updated": "2024-06-25T04:13:50.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9656307816",
     "latest": false,
     "tags": [
       "pr-nbl-filter-releases",
-      "pr-nbl-filter-releases-1.20.0.4577",
-      "pr-nbl-filter-releases-9ae42c0"
+      "pr-nbl-filter-releases-1.20.0.4578",
+      "pr-nbl-filter-releases-36b477d"
     ]
   },
   "pr-newznab-capabilities": {
