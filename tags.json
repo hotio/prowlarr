@@ -83,6 +83,18 @@
       "pr-multiple-kind-of-proxies-df3f099"
     ]
   },
+  "pr-nbl-filter-releases": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-06-25T01:29:56.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9654927202",
+    "latest": false,
+    "tags": [
+      "pr-nbl-filter-releases",
+      "pr-nbl-filter-releases-1.20.0.4577",
+      "pr-nbl-filter-releases-9ae42c0"
+    ]
+  },
   "pr-newznab-capabilities": {
     "description": "",
     "hide": true,
