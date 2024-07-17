@@ -71,6 +71,18 @@
       "pr-forceful-testing-9eacc7d"
     ]
   },
+  "pr-litestream-sqlite": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-07-17T12:23:47.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/9974087377",
+    "latest": false,
+    "tags": [
+      "pr-litestream-sqlite",
+      "pr-litestream-sqlite-1.21.1.4618",
+      "pr-litestream-sqlite-9fede74"
+    ]
+  },
   "pr-multiple-kind-of-proxies": {
     "description": "",
     "hide": true,
