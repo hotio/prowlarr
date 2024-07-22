@@ -71,6 +71,18 @@
       "pr-forceful-testing-9eacc7d"
     ]
   },
+  "pr-grabs-elapsed-time": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-07-22T01:45:17.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10033213193",
+    "latest": false,
+    "tags": [
+      "pr-grabs-elapsed-time",
+      "pr-grabs-elapsed-time-1.21.2.4634",
+      "pr-grabs-elapsed-time-4131d11"
+    ]
+  },
   "pr-litestream-sqlite": {
     "description": "",
     "hide": true,
