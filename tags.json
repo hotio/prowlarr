@@ -74,13 +74,13 @@
   "pr-grabs-elapsed-time": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-07-22T02:24:54.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10033564220",
+    "last_updated": "2024-07-22T16:43:07.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10044872537",
     "latest": false,
     "tags": [
       "pr-grabs-elapsed-time",
-      "pr-grabs-elapsed-time-1.21.2.4635",
-      "pr-grabs-elapsed-time-6a67ca9"
+      "pr-grabs-elapsed-time-1.21.2.4637",
+      "pr-grabs-elapsed-time-6c01528"
     ]
   },
   "pr-litestream-sqlite": {
