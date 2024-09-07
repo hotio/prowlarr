@@ -122,13 +122,13 @@
   "pr-nebluance-403": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-09-06T00:59:11.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10730532562",
+    "last_updated": "2024-09-07T01:03:32.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10747188737",
     "latest": false,
     "tags": [
       "pr-nebluance-403",
       "pr-nebluance-403-1.24.0.4718",
-      "pr-nebluance-403-e62c0e5"
+      "pr-nebluance-403-5f396ea"
     ]
   },
   "pr-newznab-capabilities": {
