@@ -146,13 +146,13 @@
   "pr-ops-freeleech-tokens": {
     "description": "",
     "hide": true,
-    "last_updated": "2024-09-08T10:58:19.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10759310072",
+    "last_updated": "2024-09-08T12:06:06.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/10759707091",
     "latest": false,
     "tags": [
       "pr-ops-freeleech-tokens",
-      "pr-ops-freeleech-tokens-1.24.1.4727",
-      "pr-ops-freeleech-tokens-9178399"
+      "pr-ops-freeleech-tokens-1.24.1.4729",
+      "pr-ops-freeleech-tokens-b2fd1fb"
     ]
   },
   "pr-override-release-grab-modal": {
