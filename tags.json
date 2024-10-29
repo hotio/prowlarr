@@ -35,6 +35,18 @@
       "pr-bump-dotnet-v6-1e26982"
     ]
   },
+  "pr-disable-nzbindex": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-10-29T21:35:23.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/11582813603",
+    "latest": false,
+    "tags": [
+      "pr-disable-nzbindex",
+      "pr-disable-nzbindex-1.26.0.4828",
+      "pr-disable-nzbindex-e346285"
+    ]
+  },
   "pr-download-magnet-url-redirect": {
     "description": "",
     "hide": true,
