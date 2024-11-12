@@ -242,13 +242,13 @@
   "testing": {
     "description": "develop",
     "hide": false,
-    "last_updated": "2024-11-03T10:35:10.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/11650605507",
+    "last_updated": "2024-11-12T06:31:43.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/11791792308",
     "latest": false,
     "tags": [
       "testing",
       "testing-1.26.0.4833",
-      "testing-1e4c69b"
+      "testing-87b56e3"
     ]
   }
 }
