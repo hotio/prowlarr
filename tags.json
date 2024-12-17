@@ -155,6 +155,18 @@
       "pr-newznab-capabilities-9ff2d06"
     ]
   },
+  "pr-norbits-utf8-search": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2024-12-17T18:55:51.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/12379508501",
+    "latest": false,
+    "tags": [
+      "pr-norbits-utf8-search",
+      "pr-norbits-utf8-search-1.29.0.4891",
+      "pr-norbits-utf8-search-79c9d82"
+    ]
+  },
   "pr-ops-freeleech-tokens": {
     "description": "",
     "hide": true,
