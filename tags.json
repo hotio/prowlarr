@@ -71,6 +71,18 @@
       "pr-env-settings-ac83df3"
     ]
   },
+  "pr-fix-ptp-freeleech": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-01-23T00:38:17.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/12919761905",
+    "latest": false,
+    "tags": [
+      "pr-fix-ptp-freeleech",
+      "pr-fix-ptp-freeleech-1.30.2.4934",
+      "pr-fix-ptp-freeleech-adf3812"
+    ]
+  },
   "pr-forceful-testing": {
     "description": "",
     "hide": true,
