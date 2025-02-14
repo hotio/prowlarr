@@ -254,13 +254,13 @@
   "release": {
     "description": "master",
     "hide": false,
-    "last_updated": "2025-01-24T15:49:56.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/12952892926",
+    "last_updated": "2025-02-14T21:33:07.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/13337669697",
     "latest": true,
     "tags": [
       "release",
       "release-1.30.2.4939",
-      "release-7e76e26"
+      "release-ebdce03"
     ]
   },
   "testing": {
