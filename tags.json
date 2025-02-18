@@ -2,13 +2,13 @@
   "nightly": {
     "description": "nightly",
     "hide": false,
-    "last_updated": "2025-02-18T02:31:38.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/13382011330",
+    "last_updated": "2025-02-18T16:04:36.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/13394841105",
     "latest": false,
     "tags": [
       "nightly",
-      "nightly-1.31.2.4972",
-      "nightly-cbc4bb0"
+      "nightly-1.31.2.4973",
+      "nightly-40c625a"
     ]
   },
   "pr-avoid-retest-providers": {
