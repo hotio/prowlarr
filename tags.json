@@ -218,13 +218,13 @@
   "pr-ptp-caching": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-04-30T11:56:02.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/14753919248",
+    "last_updated": "2025-04-30T22:49:57.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/14765824612",
     "latest": false,
     "tags": [
       "pr-ptp-caching",
       "pr-ptp-caching-1.36.0.5036",
-      "pr-ptp-caching-086a17d"
+      "pr-ptp-caching-728120c"
     ]
   },
   "pr-retry-query": {
