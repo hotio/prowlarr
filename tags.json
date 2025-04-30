@@ -215,6 +215,18 @@
       "pr-password-input-a94cd9d"
     ]
   },
+  "pr-ptp-caching": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-04-30T11:56:02.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/14753919248",
+    "latest": false,
+    "tags": [
+      "pr-ptp-caching",
+      "pr-ptp-caching-1.36.0.5036",
+      "pr-ptp-caching-086a17d"
+    ]
+  },
   "pr-retry-query": {
     "description": "",
     "hide": true,
