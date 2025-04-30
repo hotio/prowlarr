@@ -1,5 +1,5 @@
 {
-  "branch": "sync-apps-caps-supported",
+  "branch": "ptp-caching",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:882879e7e90b5a0c9320fe677531d8bad9858ed84314fda2ec635c5d1657ecd3",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "1.36.0.5041"
+  "version": "1.36.0.5036"
 }
