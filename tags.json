@@ -167,6 +167,18 @@
       "pr-newznab-capabilities-9ff2d06"
     ]
   },
+  "pr-newznab-redirect": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-05-12T18:18:19.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/14979528891",
+    "latest": false,
+    "tags": [
+      "pr-newznab-redirect",
+      "pr-newznab-redirect-1.36.2.5053",
+      "pr-newznab-redirect-00a5d6d"
+    ]
+  },
   "pr-norbits-utf8-search": {
     "description": "",
     "hide": true,
