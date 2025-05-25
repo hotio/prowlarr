@@ -158,13 +158,13 @@
   "pr-net80": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-05-18T15:46:44.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15097546311",
+    "last_updated": "2025-05-25T11:10:46.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15237229663",
     "latest": false,
     "tags": [
       "pr-net80",
       "pr-net80-2.0.0.5065",
-      "pr-net80-c12732b"
+      "pr-net80-1ca1299"
     ]
   },
   "pr-newznab-capabilities": {
