@@ -11,6 +11,18 @@
       "nightly-d4bad97"
     ]
   },
+  "pr-auth-fixes": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-06-28T20:57:07.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15948095860",
+    "latest": false,
+    "tags": [
+      "pr-auth-fixes",
+      "pr-auth-fixes-2.0.1.5100",
+      "pr-auth-fixes-bb6184a"
+    ]
+  },
   "pr-avoid-retest-providers": {
     "description": "",
     "hide": true,
