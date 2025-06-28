@@ -194,13 +194,13 @@
   "pr-newznab-redirect": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-06-23T10:40:40.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15822010009",
+    "last_updated": "2025-06-28T14:32:31.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15945134161",
     "latest": false,
     "tags": [
       "pr-newznab-redirect",
       "pr-newznab-redirect-2.0.1.5096",
-      "pr-newznab-redirect-9f54a94"
+      "pr-newznab-redirect-1d07648"
     ]
   },
   "pr-norbits-utf8-search": {
