@@ -119,6 +119,18 @@
       "pr-litestream-sqlite-9fede74"
     ]
   },
+  "pr-migrate-to-forms": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-06-28T13:14:04.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/15944493996",
+    "latest": false,
+    "tags": [
+      "pr-migrate-to-forms",
+      "pr-migrate-to-forms-2.0.1.5098",
+      "pr-migrate-to-forms-49304cf"
+    ]
+  },
   "pr-multiple-kind-of-proxies": {
     "description": "",
     "hide": true,
