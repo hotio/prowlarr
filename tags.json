@@ -83,6 +83,18 @@
       "pr-env-settings-ac83df3"
     ]
   },
+  "pr-feat-staz-timezones": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-07-10T21:50:28.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/16206730651",
+    "latest": false,
+    "tags": [
+      "pr-feat-staz-timezones",
+      "pr-feat-staz-timezones-2.0.2.5115",
+      "pr-feat-staz-timezones-6b3f0c9"
+    ]
+  },
   "pr-fix-ptp-freeleech": {
     "description": "",
     "hide": true,
