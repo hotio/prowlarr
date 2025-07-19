@@ -326,13 +326,13 @@
   "pr-sonarr-pull-quiet-debugauth": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-07-08T23:02:23.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/16156149198",
+    "last_updated": "2025-07-19T11:49:32.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/16388363673",
     "latest": false,
     "tags": [
       "pr-sonarr-pull-quiet-debugauth",
       "pr-sonarr-pull-quiet-debugauth-2.0.1.5106",
-      "pr-sonarr-pull-quiet-debugauth-ab4af70"
+      "pr-sonarr-pull-quiet-debugauth-c65d5f6"
     ]
   },
   "pr-sync-apps-caps-supported": {
