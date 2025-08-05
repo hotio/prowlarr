@@ -302,13 +302,13 @@
   "pr-revert-2395-newznab-redirect": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-08-04T11:32:40.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/16721912025",
+    "last_updated": "2025-08-05T10:14:46.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/16747160106",
     "latest": false,
     "tags": [
       "pr-revert-2395-newznab-redirect",
-      "pr-revert-2395-newznab-redirect-2.0.3.5126",
-      "pr-revert-2395-newznab-redirect-68cabdb"
+      "pr-revert-2395-newznab-redirect-2.0.3.5128",
+      "pr-revert-2395-newznab-redirect-eea8362"
     ]
   },
   "pr-shenanigans-by-baker": {
