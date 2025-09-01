@@ -95,6 +95,18 @@
       "pr-feat-staz-timezones-6b3f0c9"
     ]
   },
+  "pr-file-list-updates": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-09-01T18:31:11.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/17384923731",
+    "latest": false,
+    "tags": [
+      "pr-file-list-updates",
+      "pr-file-list-updates-2.1.0.5164",
+      "pr-file-list-updates-e3912c9"
+    ]
+  },
   "pr-fix-ptp-freeleech": {
     "description": "",
     "hide": true,
