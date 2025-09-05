@@ -314,13 +314,13 @@
   "pr-ptp-no-season": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-09-04T19:32:26.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/17474655316",
+    "last_updated": "2025-09-05T21:26:53.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/17504831911",
     "latest": false,
     "tags": [
       "pr-ptp-no-season",
       "pr-ptp-no-season-2.1.0.5174",
-      "pr-ptp-no-season-a285432"
+      "pr-ptp-no-season-858001f"
     ]
   },
   "pr-retry-query": {
