@@ -47,6 +47,18 @@
       "pr-bump-dotnet-v6-1e26982"
     ]
   },
+  "pr-cardigann-internal-flag": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-09-05T16:12:05.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/17498476741",
+    "latest": false,
+    "tags": [
+      "pr-cardigann-internal-flag",
+      "pr-cardigann-internal-flag-2.1.0.5176",
+      "pr-cardigann-internal-flag-d5a9442"
+    ]
+  },
   "pr-disable-nzbindex": {
     "description": "",
     "hide": true,
