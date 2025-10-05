@@ -47,6 +47,18 @@
       "pr-bump-dotnet-v6-1e26982"
     ]
   },
+  "pr-bumps": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-10-05T17:18:39.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/18261885757",
+    "latest": false,
+    "tags": [
+      "pr-bumps",
+      "pr-bumps-2.1.3.5210",
+      "pr-bumps-3f72846"
+    ]
+  },
   "pr-cardigann-internal-flag": {
     "description": "",
     "hide": true,
