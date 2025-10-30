@@ -407,6 +407,18 @@
       "pr-sonarr-pull-quiet-debugauth-c65d5f6"
     ]
   },
+  "pr-sql-fallback": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-10-30T17:49:56.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/18950093425",
+    "latest": false,
+    "tags": [
+      "pr-sql-fallback",
+      "pr-sql-fallback-2.3.0.5230",
+      "pr-sql-fallback-94a2d08"
+    ]
+  },
   "pr-sync-apps-caps-supported": {
     "description": "",
     "hide": true,
