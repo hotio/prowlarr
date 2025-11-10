@@ -179,6 +179,18 @@
       "pr-grabs-elapsed-time-6c01528"
     ]
   },
+  "pr-ipv6-headers": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-10T09:26:05.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/19226814174",
+    "latest": false,
+    "tags": [
+      "pr-ipv6-headers",
+      "pr-ipv6-headers-2.3.0.5234",
+      "pr-ipv6-headers-f1c6ed4"
+    ]
+  },
   "pr-litestream-sqlite": {
     "description": "",
     "hide": true,
