@@ -444,15 +444,19 @@
     ]
   },
   "release": {
+    "commit_message": "Upstream image update",
     "description": "master",
     "hide": false,
-    "last_updated": "2025-12-31T17:24:22.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/20623610542",
+    "last_updated": "2026-01-04T09:26:20.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/20690831391",
     "latest": true,
     "tags": [
       "release",
       "release-2.3.0.5236",
-      "release-8f1dffc"
+      "release-e686942",
+      "",
+      "",
+      ""
     ]
   },
   "testing": {
