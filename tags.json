@@ -1,14 +1,18 @@
 {
   "nightly": {
+    "commit_message": "Upstream image update",
     "description": "nightly",
     "hide": false,
-    "last_updated": "2025-12-31T17:24:13.000Z",
-    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/20623609973",
+    "last_updated": "2026-01-04T09:26:15.000Z",
+    "last_updated_url": "https://github.com/hotio/prowlarr/actions/runs/20690830584",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-2.3.2.5245",
-      "nightly-dd09aa4"
+      "nightly-94e988d",
+      "",
+      "",
+      ""
     ]
   },
   "pr-auth-fixes": {
