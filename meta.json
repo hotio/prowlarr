@@ -1,5 +1,5 @@
 {
-  "branch": "ipv6-headers",
+  "version_branch": "ipv6-headers",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
