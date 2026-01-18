@@ -7,5 +7,5 @@ curl -fsSL "https://prowlarr.servarr.com/v1/update/${version_branch}/updatefile?
 json=$(cat meta.json)
 jq --sort-keys \
     --arg version "${version//v/}" \
-    --arg version_branch "${version_branch}" \
+    --arg version_branch "${version_branch,,}" \
     '.version = $version | .version_branch = $version_branch' <<< "${json}" | tee meta.json
