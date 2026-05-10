@@ -6,7 +6,7 @@ EXPOSE 9696
 ARG IMAGE_STATS
 ENV IMAGE_STATS=${IMAGE_STATS} WEBUI_PORTS="9696/tcp"
 
-RUN apk add --no-cache libintl sqlite-libs icu-libs
+RUN apk upgrade --no-cache && apk add --no-cache libintl sqlite-libs icu-libs
 
 ARG VERSION
 ARG VERSION_BRANCH
